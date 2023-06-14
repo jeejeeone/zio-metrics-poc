@@ -1,6 +1,6 @@
 Usage:
 
-# Define prometheus.yml to some path
+1. Define prometheus.yml to some path
 ```
 # my global config
 global:
@@ -28,7 +28,7 @@ scrape_configs:
     static_configs:
     - targets: ['host.docker.internal:8080']
 ```
-# Run prometheus container: `docker run -d --name prometheus -p 9090:9090 -v [PATH_TO_PROMETHEUS.YML]:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml`
-# Run grafan `docker run -d --name grafana -p 3000:3000 grafana/grafana` 
-# Run this project
-# Check in browser or curl localhost:8080/metrics and localhost:8080/foo
+1. Run prometheus container: `docker run -d --name prometheus -p 9090:9090 -v [PATH_TO_PROMETHEUS.YML]:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml`
+1. Run grafan `docker run -d --name grafana -p 3000:3000 grafana/grafana` 
+1. Run this project
+1. Check in browser or curl localhost:8080/metrics and localhost:8080/foo
